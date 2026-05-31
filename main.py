@@ -23,8 +23,13 @@ def view_students():
     cursor.execute("SELECT * FROM STUDENTS")
 
     students = cursor.fetchall()
-    for student in students:
-        print(student)
+    print("\nSTUDENTS")
+    print("-" * 80)
+    print(f"{'ID':<5}{'First Name':<15} {'Last Name':<15} {'email':<40}")
+    print("-" * 80)
+    for row in students: 
+        print(F"{row[0]:<5}{row[1]:<15}{row[2]:<15}{row[3]:<40}")
+    print("-" * 80)
 
 
 #ADD NEW STUDENTS
@@ -68,9 +73,17 @@ def view_students_grades():
         """
     cursor.execute(query)
     results = cursor.fetchall()
+    print("\nSTUDENT GRADES")
+    print("-" * 80)
+    print(f"{'Student':<25} {'Course Name':<35}{'Grade':<10}")
+    print("-" * 80)
 
-    for result in results:
-        print(result)
+    for row in results: 
+        student = f"{row[0]} {row[1]}"
+        print(F"{student:<25} {row[2]:<35}{row[3]:<10}")
+    print("-" * 80)
+
+ 
 
 
 #PRINCIPAL MENU 
