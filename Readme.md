@@ -6,7 +6,7 @@ The application integrates with a MySQL relational database through the `mysql-c
 
 The purpose of this project was to strengthen my understanding of relational database concepts, SQL queries, and how software applications interact with databases. Through this project, I learned how to perform CRUD operations (Create, Read, Update, Delete), use primary and foreign keys, and retrieve information using JOIN statements.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video]https://youtu.be/UqduwbqMo7s
 
 # Relational Database
 

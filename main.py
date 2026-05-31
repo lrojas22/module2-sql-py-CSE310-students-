@@ -27,6 +27,7 @@ def view_students():
     print("-" * 80)
     print(f"{'ID':<5}{'First Name':<15} {'Last Name':<15} {'email':<40}")
     print("-" * 80)
+    
     for row in students: 
         print(F"{row[0]:<5}{row[1]:<15}{row[2]:<15}{row[3]:<40}")
     print("-" * 80)
